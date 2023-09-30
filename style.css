@@ -104,3 +104,61 @@ body {
   border-bottom:1px solid rgba(255,255,255,.5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
+
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vw;
+  position: relative;
+}
+
+.back-image {
+  background-image: url("https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  filter: brightness(50%);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back-text {
+  font-weight: bold;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  color: white; /* Add this if you want white text */
+  position: absolute;
+}
+
+@media only screen and (max-width: 900px) {
+  .cover{
+    height: 45vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .cover{
+    height: 55vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cover{
+    height: 65vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cover{
+    height: 95vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cover{
+    height: 125vw;
+  }
+}
