@@ -22,7 +22,7 @@ body {
   background: #DAC0A3;
 }
 
-#top-bar {
+.top-bar {
   height: 20px;
   background: #0F2C59;
 }
@@ -233,9 +233,6 @@ body {
   margin-bottom : 15px ;
 }
 
-
-/* === HEADING STYLE #2 === */
-
 .two h1:before {
   position: absolute;
   left: 0;
@@ -256,6 +253,51 @@ body {
 
 #meal-instructions {
   color: #000; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content : center ;
+  flex-wrap : wrap ;
+  margin: auto;
+  border: 1px solid #e6e6e6;
+  margin-top :15px;
+  background: #F8F0E5;
+}
+
+.footer-link {
+  margin: 10px 30px;
+  padding: 10px;
+  width: 350px;
+}
+
+.list-title {
+  font-size : 30px;
+  margin-bottom : 25px;
+  color: #0F2C59;
+}
+
+.description {
+  color: grey;
+  font-size : 20px;
+}
+
+.footer-link > ul li {
+  font-size : 20px;
+  margin-bottom : 25px;
+  color: grey;
+}
+
+.footer-logo {
+  margin-right : 20px;
+  color: #0F2C59;
+  height: 25px;
+  cursor: pointer;
+}
+
+.footer-social-links > i{
+  margin-right : 25px;
+  color: #0F2C59;
 }
 
 @media only screen and (max-width: 900px) {
