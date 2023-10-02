@@ -316,6 +316,85 @@ body {
   color: #0F2C59;
 }
 
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+
+#searched-meal-thumb {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 300px;
+  max-width: 600px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.255)
+}
+
+#searched-meal-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+#searched-meal-category,
+#searched-meal-area,
+.ingrediant {
+  color: #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+
+.instru-box {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 85%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  background: #fff;
+  text-align: center;
+  padding: 25px;
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.close-instru-btn {
+  border: 1px solid black;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: #fff;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+  transition: all .5s;
+}
+
+.close-instru-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+
 @media only screen and (max-width: 900px) {
   .cover {
     height: 45vw;
