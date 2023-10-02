@@ -1,21 +1,13 @@
-/* color palette : 
-      - F8F0E5
-      - EADBC8
-      - DAC0A3
-      - 0F2C59
-       */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -29,36 +21,37 @@ body {
 
 #nav-bar {
   display: flex;
-  justify-content : space-between ;
+  justify-content: space-between;
   padding: 25px 40px;
   background: #F8F0E5;
-  font-size : 25px;
+  font-size: 25px;
 }
 
 #logo {
   padding: 10px;
 }
 
-#logo > img {
-    margin-right: 15px;
-    height: 30px;
+#logo>img {
+  margin-right: 15px;
+  height: 30px;
 }
 
 .uten {
-  margin-right : 10px ;
+  margin-right: 10px;
 }
 
 #nav-links {
   display: flex;
-  column-gap : 20px;
+  column-gap: 20px;
 }
 
-.search-box{
+.search-box {
   width: fit-content;
   height: fit-content;
   position: relative;
 }
-.input-search{
+
+.input-search {
   height: 50px;
   width: 50px;
   border-style: none;
@@ -70,15 +63,17 @@ body {
   transition: all .5s ease-in-out;
   background-color: #0F2C59;
   padding-right: 40px;
-  color:#fff;
+  color: #fff;
 }
-.input-search::placeholder{
-  color:#fff;
+
+.input-search::placeholder {
+  color: #fff;
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 100;
 }
-.btn-search{
+
+.btn-search {
   width: 50px;
   height: 50px;
   border-style: none;
@@ -89,22 +84,24 @@ body {
   border-radius: 50%;
   position: absolute;
   right: 0px;
-  color:#ffffff ;
-  background-color:transparent;
-  pointer-events: painted;  
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
 }
-.btn-search:focus ~ .input-search{
+
+.btn-search:focus~.input-search {
   width: 300px;
   border-radius: 0px;
   background-color: #0F2C59;
-  border-bottom:1px solid rgba(255,255,255,.5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
-.input-search:focus{
+
+.input-search:focus {
   width: 300px;
   border-radius: 0px;
   background-color: #0F2C59;
-  border-bottom:1px solid rgba(255,255,255,.5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
@@ -117,7 +114,7 @@ body {
 }
 
 .back-image {
-  background-image: url("https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-image: url("./pics/cover.jpg");
   filter: brightness(50%);
   height: 100%;
   width: 100%;
@@ -132,16 +129,17 @@ body {
   width: 80%;
   padding: 20px;
   text-align: center;
-  color: white; /* Add this if you want white text */
+  color: white;
+  /* Add this if you want white text */
   position: absolute;
 }
 
-.meals-container {   
-  gap : 15px;
+.meals-container {
+  gap: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;    
-  height: 100vh;  
+  justify-content: center;
+  height: auto;
   margin: 25px 50px 0px 50px;
 }
 
@@ -150,15 +148,18 @@ body {
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.25);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);  
-  padding: 38px;  
-  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 38px;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
-  margin-bottom : 50px ;
+  margin-bottom: 50px;
+  width: 550px;
+  height: 550px;
+  box-shadow: 1px 1px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
 .wrapper {
@@ -166,8 +167,8 @@ body {
   height: 100%;
 }
 
-.wrapper > * {
-  margin-bottom : 5px ;
+.wrapper>* {
+  margin-bottom: 5px;
 }
 
 .meal-image {
@@ -176,22 +177,24 @@ body {
   height: 300px;
   width: 100%;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255, 0.255)
+  border: 1px solid rgba(255, 255, 255, 0.255)
 }
 
-.meal-name{
+.meal-name {
   font-weight: bold;
-  color: rgba(255,255,255,0.98);
+  color: rgba(255, 255, 255, 0.98);
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
+
 }
 
-.meal-cat , .meal-tags {
+.meal-cat,
+.meal-tags {
   color: #000;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -202,14 +205,20 @@ body {
   padding: 12px 24px;
   border-radius: 24px;
   font-size: 12px;
-  font-size: 0.8rem;  
+  font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 2px;  
+  letter-spacing: 2px;
   cursor: pointer;
+  transition: all .5s;
+}
+
+.instru-btn:hover {
+  background: #000;
+  color: #fff;
 }
 
 .instru {
-  margin: 0px 50px 50px 50px ;
+  margin: 0px 50px 50px 50px;
 }
 
 .random-meals {
@@ -217,7 +226,7 @@ body {
   font-weight: bold;
 }
 
-/* === BASE HEADING === */ 
+/* === BASE HEADING === */
 
 .title {
   position: relative;
@@ -230,7 +239,7 @@ body {
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-  margin-bottom : 15px ;
+  margin-bottom: 15px;
 }
 
 .two h1:before {
@@ -245,23 +254,30 @@ body {
 
 
 .alt-two h1 {
-  text-align:center;
+  text-align: center;
 }
+
 .alt-two h1:before {
-  left:50%; margin-left:-30px;
+  left: 50%;
+  margin-left: -30px;
 }
 
 #meal-instructions {
-  color: #000; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 0 24px;
 }
 
 .footer-links {
   display: flex;
-  justify-content : center ;
-  flex-wrap : wrap ;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: auto;
   border: 1px solid #e6e6e6;
-  margin-top :15px;
+  margin-top: 15px;
   background: #F8F0E5;
 }
 
@@ -272,60 +288,113 @@ body {
 }
 
 .list-title {
-  font-size : 30px;
-  margin-bottom : 25px;
+  font-size: 30px;
+  margin-bottom: 25px;
   color: #0F2C59;
 }
 
 .description {
   color: grey;
-  font-size : 20px;
+  font-size: 20px;
 }
 
-.footer-link > ul li {
-  font-size : 20px;
-  margin-bottom : 25px;
+.footer-link>ul li {
+  font-size: 20px;
+  margin-bottom: 25px;
   color: grey;
 }
 
 .footer-logo {
-  margin-right : 20px;
+  margin-right: 20px;
   color: #0F2C59;
   height: 25px;
   cursor: pointer;
 }
 
-.footer-social-links > i{
-  margin-right : 25px;
+.footer-social-links>i {
+  margin-right: 25px;
   color: #0F2C59;
 }
 
 @media only screen and (max-width: 900px) {
-  .cover{
+  .cover {
     height: 45vw;
+  }
+
+  .meals-container {
+    flex-direction: column;
+    height: auto;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .cover{
+  .cover {
     height: 55vw;
+  }
+
+  .btn-search:focus~.input-search,
+  .input-search:focus {
+    width: 250px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .cover{
+  .cover {
     height: 65vw;
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  .btn-search:focus~.input-search,
+  .input-search:focus {
+    width: 200px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .cover{
+  .cover {
     height: 95vw;
   }
+
+  .container {
+    width: 350px;
+  }
+
+  .btn-search:focus~.input-search,
+  .input-search:focus {
+    width: 150px;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
-  .cover{
+
+  #logo {
+    padding: 5px;
+    margin-left: -15px;
+  }
+
+  #logo>img {
+    margin-right: 10px;
+    height: 30px;
+  }
+
+  .search-box {
+    margin-right: -30px;
+  }
+
+  .input-search::placeholder {
+    font-size: 10px;
+  }
+
+  .cover {
     height: 125vw;
+  }
+
+  .btn-search:focus~.input-search,
+  .input-search:focus {
+    width: 120px;
   }
 }
