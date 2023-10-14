@@ -130,3 +130,9 @@ function searchForMeal() {
 
     });
 }
+
+ //Dummy Function 
+
+ function dummyFunction() {
+  console.log("Hello")
+ }
